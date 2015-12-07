@@ -15,6 +15,17 @@
 		D7E8FCC41C11A02F005E908F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FCC21C11A02F005E908F /* LaunchScreen.storyboard */; };
 		D7E8FCCF1C11A02F005E908F /* XTMultipleTablesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FCCE1C11A02F005E908F /* XTMultipleTablesTests.m */; };
 		D7E8FCDA1C11A02F005E908F /* XTMultipleTablesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FCD91C11A02F005E908F /* XTMultipleTablesUITests.m */; };
+		D7E8FCEA1C11A06E005E908F /* XTMultipleTables.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FCE91C11A06E005E908F /* XTMultipleTables.m */; };
+		D7E8FD611C153841005E908F /* TableHandler_homePage.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD601C153841005E908F /* TableHandler_homePage.m */; };
+		D7E8FD651C153C66005E908F /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD631C153C66005E908F /* HomeCell.m */; };
+		D7E8FD661C153C66005E908F /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD641C153C66005E908F /* HomeCell.xib */; };
+		D7E8FD691C157179005E908F /* XTTableViewRootHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD681C157179005E908F /* XTTableViewRootHandler.m */; };
+		D7E8FD6C1C1576C8005E908F /* TableHander_ entertainment.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD6B1C1576C8005E908F /* TableHander_ entertainment.m */; };
+		D7E8FD701C1576EE005E908F /* EntertainmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD6E1C1576EE005E908F /* EntertainmentCell.m */; };
+		D7E8FD711C1576EE005E908F /* EntertainmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD6F1C1576EE005E908F /* EntertainmentCell.xib */; };
+		D7E8FD771C158810005E908F /* TableHandler_hot.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD761C158810005E908F /* TableHandler_hot.m */; };
+		D7E8FD7B1C158849005E908F /* HotPointCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD791C158849005E908F /* HotPointCell.m */; };
+		D7E8FD7C1C158849005E908F /* HotPointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD7A1C158849005E908F /* HotPointCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,25 @@
 		D7E8FCD51C11A02F005E908F /* XTMultipleTablesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTMultipleTablesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8FCD91C11A02F005E908F /* XTMultipleTablesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTMultipleTablesUITests.m; sourceTree = "<group>"; };
 		D7E8FCDB1C11A02F005E908F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E8FCE81C11A06E005E908F /* XTMultipleTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTMultipleTables.h; sourceTree = "<group>"; };
+		D7E8FCE91C11A06E005E908F /* XTMultipleTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTMultipleTables.m; sourceTree = "<group>"; };
+		D7E8FD5F1C153841005E908F /* TableHandler_homePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableHandler_homePage.h; path = TableHandlers/TableHandler_homePage.h; sourceTree = "<group>"; };
+		D7E8FD601C153841005E908F /* TableHandler_homePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableHandler_homePage.m; path = TableHandlers/TableHandler_homePage.m; sourceTree = "<group>"; };
+		D7E8FD621C153C66005E908F /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = TableHandlers/HomeCell.h; sourceTree = "<group>"; };
+		D7E8FD631C153C66005E908F /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = TableHandlers/HomeCell.m; sourceTree = "<group>"; };
+		D7E8FD641C153C66005E908F /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeCell.xib; path = TableHandlers/HomeCell.xib; sourceTree = "<group>"; };
+		D7E8FD671C157178005E908F /* XTTableViewRootHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTTableViewRootHandler.h; path = RootTableHander/XTTableViewRootHandler.h; sourceTree = "<group>"; };
+		D7E8FD681C157179005E908F /* XTTableViewRootHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTTableViewRootHandler.m; path = RootTableHander/XTTableViewRootHandler.m; sourceTree = "<group>"; };
+		D7E8FD6A1C1576C8005E908F /* TableHander_ entertainment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TableHander_ entertainment.h"; path = "TableHandlers/TableHander_ entertainment.h"; sourceTree = "<group>"; };
+		D7E8FD6B1C1576C8005E908F /* TableHander_ entertainment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TableHander_ entertainment.m"; path = "TableHandlers/TableHander_ entertainment.m"; sourceTree = "<group>"; };
+		D7E8FD6D1C1576EE005E908F /* EntertainmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntertainmentCell.h; path = TableHandlers/EntertainmentCell.h; sourceTree = "<group>"; };
+		D7E8FD6E1C1576EE005E908F /* EntertainmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntertainmentCell.m; path = TableHandlers/EntertainmentCell.m; sourceTree = "<group>"; };
+		D7E8FD6F1C1576EE005E908F /* EntertainmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EntertainmentCell.xib; path = TableHandlers/EntertainmentCell.xib; sourceTree = "<group>"; };
+		D7E8FD751C158810005E908F /* TableHandler_hot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableHandler_hot.h; path = TableHandlers/TableHandler_hot.h; sourceTree = "<group>"; };
+		D7E8FD761C158810005E908F /* TableHandler_hot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableHandler_hot.m; path = TableHandlers/TableHandler_hot.m; sourceTree = "<group>"; };
+		D7E8FD781C158849005E908F /* HotPointCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotPointCell.h; path = TableHandlers/HotPointCell.h; sourceTree = "<group>"; };
+		D7E8FD791C158849005E908F /* HotPointCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotPointCell.m; path = TableHandlers/HotPointCell.m; sourceTree = "<group>"; };
+		D7E8FD7A1C158849005E908F /* HotPointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotPointCell.xib; path = TableHandlers/HotPointCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +135,8 @@
 				D7E8FCB81C11A02F005E908F /* AppDelegate.m */,
 				D7E8FCBA1C11A02F005E908F /* ViewController.h */,
 				D7E8FCBB1C11A02F005E908F /* ViewController.m */,
+				D7E8FD5E1C1537DE005E908F /* TableHandles */,
+				D7E8FCE71C11A056005E908F /* XTMultipleTables */,
 				D7E8FCBD1C11A02F005E908F /* Main.storyboard */,
 				D7E8FCC01C11A02F005E908F /* Assets.xcassets */,
 				D7E8FCC21C11A02F005E908F /* LaunchScreen.storyboard */,
@@ -138,6 +170,63 @@
 				D7E8FCDB1C11A02F005E908F /* Info.plist */,
 			);
 			path = XTMultipleTablesUITests;
+			sourceTree = "<group>";
+		};
+		D7E8FCE71C11A056005E908F /* XTMultipleTables */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FCE81C11A06E005E908F /* XTMultipleTables.h */,
+				D7E8FCE91C11A06E005E908F /* XTMultipleTables.m */,
+			);
+			path = XTMultipleTables;
+			sourceTree = "<group>";
+		};
+		D7E8FD5E1C1537DE005E908F /* TableHandles */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD671C157178005E908F /* XTTableViewRootHandler.h */,
+				D7E8FD681C157179005E908F /* XTTableViewRootHandler.m */,
+				D7E8FD721C158788005E908F /* homePage */,
+				D7E8FD731C158793005E908F /* Entertainment */,
+				D7E8FD741C1587A8005E908F /* Hot */,
+			);
+			name = TableHandles;
+			sourceTree = "<group>";
+		};
+		D7E8FD721C158788005E908F /* homePage */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD5F1C153841005E908F /* TableHandler_homePage.h */,
+				D7E8FD601C153841005E908F /* TableHandler_homePage.m */,
+				D7E8FD621C153C66005E908F /* HomeCell.h */,
+				D7E8FD631C153C66005E908F /* HomeCell.m */,
+				D7E8FD641C153C66005E908F /* HomeCell.xib */,
+			);
+			name = homePage;
+			sourceTree = "<group>";
+		};
+		D7E8FD731C158793005E908F /* Entertainment */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD6A1C1576C8005E908F /* TableHander_ entertainment.h */,
+				D7E8FD6B1C1576C8005E908F /* TableHander_ entertainment.m */,
+				D7E8FD6D1C1576EE005E908F /* EntertainmentCell.h */,
+				D7E8FD6E1C1576EE005E908F /* EntertainmentCell.m */,
+				D7E8FD6F1C1576EE005E908F /* EntertainmentCell.xib */,
+			);
+			name = Entertainment;
+			sourceTree = "<group>";
+		};
+		D7E8FD741C1587A8005E908F /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD751C158810005E908F /* TableHandler_hot.h */,
+				D7E8FD761C158810005E908F /* TableHandler_hot.m */,
+				D7E8FD781C158849005E908F /* HotPointCell.h */,
+				D7E8FD791C158849005E908F /* HotPointCell.m */,
+				D7E8FD7A1C158849005E908F /* HotPointCell.xib */,
+			);
+			name = Hot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +332,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E8FD7C1C158849005E908F /* HotPointCell.xib in Resources */,
 				D7E8FCC41C11A02F005E908F /* LaunchScreen.storyboard in Resources */,
+				D7E8FD711C1576EE005E908F /* EntertainmentCell.xib in Resources */,
 				D7E8FCC11C11A02F005E908F /* Assets.xcassets in Resources */,
+				D7E8FD661C153C66005E908F /* HomeCell.xib in Resources */,
 				D7E8FCBF1C11A02F005E908F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E8FCEA1C11A06E005E908F /* XTMultipleTables.m in Sources */,
+				D7E8FD691C157179005E908F /* XTTableViewRootHandler.m in Sources */,
 				D7E8FCBC1C11A02F005E908F /* ViewController.m in Sources */,
+				D7E8FD771C158810005E908F /* TableHandler_hot.m in Sources */,
 				D7E8FCB91C11A02F005E908F /* AppDelegate.m in Sources */,
+				D7E8FD7B1C158849005E908F /* HotPointCell.m in Sources */,
+				D7E8FD611C153841005E908F /* TableHandler_homePage.m in Sources */,
+				D7E8FD701C1576EE005E908F /* EntertainmentCell.m in Sources */,
+				D7E8FD651C153C66005E908F /* HomeCell.m in Sources */,
+				D7E8FD6C1C1576C8005E908F /* TableHander_ entertainment.m in Sources */,
 				D7E8FCB61C11A02F005E908F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
