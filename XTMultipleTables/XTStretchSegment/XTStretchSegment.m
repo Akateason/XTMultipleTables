@@ -146,7 +146,7 @@ static const float kOverlayAnimationDuration = 0.25f ;
     [_dataNameList enumerateObjectsUsingBlock:^(NSString *name, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *bt = [[UIButton alloc] init] ;
         [bt setTitle:name forState:0] ;
-        [bt setTitleColor:[UIColor redColor] forState:0] ;
+        [bt setTitleColor:[UIColor blackColor] forState:0] ;
         bt.titleLabel.font = [UIFont systemFontOfSize:kTopButtonFontSize] ;
         bt.tag = kTopButtonTagBasic + idx ;
         [bt addTarget:self action:@selector(clickOnWhichButton:) forControlEvents:UIControlEventTouchUpInside] ;
