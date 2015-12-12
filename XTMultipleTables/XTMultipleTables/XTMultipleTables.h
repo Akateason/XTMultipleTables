@@ -10,9 +10,15 @@
 #import <UIKit/UIKit.h>
 @class XTTableDataDelegate ;
 
+@protocol XTMultipleTablesDelegate <NSObject>
+- (void)moveToIndexCallBack:(int)index ;
+@end
+
 @interface XTMultipleTables : UIScrollView
 
-@property (nonatomic)   int currentIndex ;
+@property (nonatomic, weak) id <XTMultipleTablesDelegate> xtDelegate ;
+@property (nonatomic,readonly) int currentIndex ;
+- (void)xtMultipleTableMoveToTheIndex:(int)indexToMove ;
 
 - (instancetype)initWithFrame:(CGRect)frame
                      handlers:(NSArray *)handlersList ;

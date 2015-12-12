@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface XTTableViewRootHandler : NSObject <UITableViewDataSource,UITableViewDelegate>
+@interface XTTableViewRootHandler : NSObject 
 
 @property (nonatomic,strong) NSArray *dataList ;    // datasource
 @property (nonatomic)        CGFloat offsetY ;      // cache offsetY .

@@ -24,6 +24,24 @@ static int IMAGEVIEW_COUNT = 3 ;
 
 @implementation XTMultipleTables
 
+#pragma mark - Public
+- (void)xtMultipleTableMoveToTheIndex:(int)indexToMove
+{
+    _currentIndex = indexToMove ;
+
+    [self resetTableHandersList] ;
+    [self resetOffsetYOfEveryTable] ;
+
+//  transition animation .
+    CATransition *animation = [CATransition animation];
+    [animation setDuration:0.65] ;
+    [animation setFillMode:kCAFillModeForwards] ;
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+    [animation setType:@"rippleEffect"] ;
+    [_centerTable.layer addAnimation:animation forKey:nil] ;
+    
+}
+
 #pragma mark - Initialization
 - (instancetype)initWithFrame:(CGRect)frame
                      handlers:(NSArray *)handlersList
@@ -71,7 +89,7 @@ static int IMAGEVIEW_COUNT = 3 ;
         [(XTTableViewRootHandler *)_list_handlers[1] handleTableDatasourceAndDelegate:_rightTable] ;
     }
     
-    self.currentIndex = 0 ;
+    _currentIndex = 0 ;
 }
 
 #pragma mark - Property
@@ -148,7 +166,6 @@ static int IMAGEVIEW_COUNT = 3 ;
 #pragma mark - refresh .
 - (void)refresh
 {
-    int leftIndex , rightIndex ;
     CGPoint offset = [self contentOffset] ;
     
 //    NSLog(@"offset x : %@",@(offset.x)) ;
@@ -165,6 +182,13 @@ static int IMAGEVIEW_COUNT = 3 ;
     else
         return ;
     
+//    NSLog(@"currentIndex is : %d",_currentIndex) ;
+    [self resetTableHandersList] ;
+}
+
+- (void)resetTableHandersList
+{
+    int leftIndex , rightIndex ;
     // reset handler of center .
     [(XTTableViewRootHandler *)_list_handlers[_currentIndex] handleTableDatasourceAndDelegate:_centerTable] ;
     // reset handler of left and right .
@@ -172,7 +196,6 @@ static int IMAGEVIEW_COUNT = 3 ;
     rightIndex  = (_currentIndex + 1) % self.allCount ;
     [(XTTableViewRootHandler *)_list_handlers[leftIndex] handleTableDatasourceAndDelegate:_leftTable] ;
     [(XTTableViewRootHandler *)_list_handlers[rightIndex] handleTableDatasourceAndDelegate:_rightTable] ;
-//    NSLog(@"currentIndex is : %d",_currentIndex) ;
 }
 
 - (void)resetOffsetYOfEveryTable
@@ -183,7 +206,8 @@ static int IMAGEVIEW_COUNT = 3 ;
     int rightIndex  = (_currentIndex + 1) % self.allCount ;
     [(XTTableViewRootHandler *)_list_handlers[leftIndex] refreshOffsetYWithTable:_leftTable] ;
     [(XTTableViewRootHandler *)_list_handlers[rightIndex] refreshOffsetYWithTable:_rightTable] ;
+    
+    [self.xtDelegate moveToIndexCallBack:_currentIndex] ;
 }
-
 
 @end
